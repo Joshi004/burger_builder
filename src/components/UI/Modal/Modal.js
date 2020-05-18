@@ -6,7 +6,7 @@ import Aux from '../../../hoc/Aux'
 const modal = (props)=>{
 return (
 <Aux>
-{props.show?<Backdrop hideModal={props.hideModal}></Backdrop>:null}
+{<Backdrop hideBackdrop={props.hideModal} show={props.show}></Backdrop>}
 <div className="Modal">
     {props.children}
 </div>
